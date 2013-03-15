@@ -20,6 +20,7 @@ while True:
 	print score
 
 	pattern = s.recv(1024)
+	print pattern
 	pattern = pattern[:-5]
 
 	part1 = pattern[:-8]
