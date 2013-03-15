@@ -1,0 +1,2 @@
+a) password must be less than 0x1din length. (29 decimal)
+b) Possible side channel attack. It checks the ciphertext at each iteration.
