@@ -411,7 +411,7 @@ Disassembly of section .text:
 //[rbp-0x14] = i
 //[rbp-0x28] = password
 
-//for(int i = 0; i < ?; i++)
+//for(int i = 0; i < strlen(password); i++)
   40063f:	c7 45 ec 00 00 00 00 	mov    DWORD PTR [rbp-0x14],0x0
   400646:	e9 8a 00 00 00       	jmp    4006d5 <strlen@plt+0x215>
 
@@ -434,8 +434,9 @@ Disassembly of section .text:
   40066e:	48 03 45 d8          	add    rax,QWORD PTR [rbp-0x28]
   400672:	0f b6 00             	movzx  eax,BYTE PTR [rax]
   400675:	89 c2                	mov    edx,eax
-//edx = password[i+1]
-//eax = password[i+1]
+
+//edx = password[i+1] //secondCopy
+//eax = password[i+1] //second
 
 //odd shifting of password[i+1]
   400677:	c0 fa 07             	sar    dl,0x7
@@ -454,17 +455,17 @@ Disassembly of section .text:
   400684:	0f be c0             	movsx  eax,al
   400687:	c1 e0 03             	shl    eax,0x3
 
-//eax = result from above shifts
+//eax = shiftedPassChar
 
 //[rbp-0x2c] = 0x12345678
 //edi = 0x12345678
   40068a:	8b 55 d4             	mov    edx,DWORD PTR [rbp-0x2c]
   40068d:	89 d7                	mov    edi,edx
 
-//copy result
+//copy shiftedPassChar
   40068f:	89 c1                	mov    ecx,eax
 
-//Shift 0x12345678 by result amount
+//Shift 0x12345678 by shiftedPassChar
   400691:	d3 ef                	shr    edi,cl
 
 //eax = shiftedVal xor password[i]
@@ -504,7 +505,7 @@ Disassembly of section .text:
   4006d1:	83 45 ec 01          	add    DWORD PTR [rbp-0x14],0x1
 
 //loop start
-//if(strlen(password) >= i)
+//if(i > strlen(password))
 	printf("done!")
 	return
   4006d5:	8b 45 ec             	mov    eax,DWORD PTR [rbp-0x14]
