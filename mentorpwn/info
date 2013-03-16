@@ -4,6 +4,6 @@
 
 ports 22, 80, 67 are open
 
-88.190.221.115
+http://88.190.221.115/4dm1n_1337_p0rt4l/index.php
 
 submit form is passing variable name username & password, but php code indicates user 'id', no indication of password filtering
