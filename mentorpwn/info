@@ -5,3 +5,5 @@
 ports 22, 80, 67 are open
 
 88.190.221.115
+
+submit form is passing variable name username & password, but php code indicates user 'id', no indication of password filtering
