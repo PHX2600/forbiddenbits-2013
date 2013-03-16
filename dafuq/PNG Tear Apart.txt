@@ -138,7 +138,8 @@ HEX that's repeated:
 
 Pulled out the repeating Hex, calculated a new IDAT length, and calculated a new CRC value.
 
-Flag was displayable.
+Flag was displayable:
+53c6ab1096072fa6c5f643a8e4dd07f9
 
 
 
