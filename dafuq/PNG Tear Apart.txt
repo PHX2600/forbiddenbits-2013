@@ -133,6 +133,12 @@ AE 42 60 82
 
 Notes:
 
+HEX that's repeated:
+40 80 00 81 94 80 86 4D C9 9A 4B 80 00 01 0D 2B 03 04 08 10 48 09 68 D8 94 AC B9 04 08 10 D0 B0 32
+
+Pulled out the repeating Hex, calculated a new IDAT length, and calculated a new CRC value.
+
+Flag was displayable.
 
 
 
