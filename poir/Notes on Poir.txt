@@ -4,3 +4,9 @@ Strings Mention:
 Dumpcap 1.8.4 (SVN Rev 46250 from /trunk-1.8
 
 Popping it open with WireShark shows network traffic.
+
+Looks like someone is requesting a 7zip file.  It grabs the file in partial chunks.
+
+Starts on frame 4151.
+
+Looks like we need to reconstruct that 7zip and maybe the flag is in there?
