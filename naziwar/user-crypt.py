@@ -3,18 +3,21 @@
 import socket
 import sys
 
-username = sys.stdin.readline()
 
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect(("88.190.221.116", 1337))
+def getHash(name):
+	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	s.connect(("88.190.221.116", 1337))
+	header = s.recv(1024)
 
-header = s.recv(1024)
+	s.send(name)
 
-s.send(username)
+	intro = s.recv(1024)
 
-intro = s.recv(1024)
+	password = intro[45:58]
 
-password = intro[45:58]
+	return password
 
-print password
+for i in range(101, 200):
+	print "i=" + str(i)
+	print getHash(str(i))
 
