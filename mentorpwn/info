@@ -1,0 +1,3 @@
+"  if(!preg_match("#union|sub|lenght|c"
+
+"length" is mispelled.  possible injection point. 
