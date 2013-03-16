@@ -1,0 +1,6 @@
+Notes on Poir
+
+Strings Mention:
+Dumpcap 1.8.4 (SVN Rev 46250 from /trunk-1.8
+
+Popping it open with WireShark shows network traffic.
