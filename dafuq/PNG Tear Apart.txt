@@ -64,4 +64,7 @@ gAMA - Chunk Type
 gAMA - Chunk Data
 00 00 B1 8F
 
+gAMA - CRC Check
+0B FC 61 05
+
 
