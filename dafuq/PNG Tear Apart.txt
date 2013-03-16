@@ -46,7 +46,7 @@ sRGB - Chunk Type
 73 52 47 42 --> sRGB
 
 sRGB - Chunk Data
-00
+00 --> Perceptual - Perceptual intent is for images preferring good adaptation to the output device gamut at the expense of colorimetric accuracy, like photographs.
 
 sRGB - CRC Check
 AE CE 1C E9
@@ -62,9 +62,19 @@ gAMA - Chunk Type
 67 41 4D 41 --> gAMA
 
 gAMA - Chunk Data
-00 00 B1 8F
+00 00 B1 8F --> 45455 - Gamma of 1/2.2
 
 gAMA - CRC Check
 0B FC 61 05
 
 
+
+
+pHYs - Length
+00 00 00 09 --> 9 Bytes
+
+pHYs - Chunk Type
+70 48 59 73 --> pHYs
+
+pHYs - Chunk Data
+00 00 0E C3 00 00 0E C3 01
