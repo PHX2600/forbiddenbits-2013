@@ -10,9 +10,12 @@ uint32_t offset = 0x12345678;
 int main(int argc, char **argv)
 {
 	char *input = argv[1];
+	char originalInput[50];
+	memset(originalInput, '\0', sizeof(originalInput));
+	strncpy(originalInput, input, sizeof(originalInput));
 
 	int length = strlen(input);
-	if(length > 30)
+	if(length >= 30)
 	{
 		printf("Too long\n");
 		return 30;
@@ -42,14 +45,25 @@ int main(int argc, char **argv)
 
 		if(input[i] != ciphertext[i])
 		{
-			printf("ERROR!\n");
+			//printf("ERROR!\n");
 			printf("i=%d\n", i);
-			printf("ciphertext[i]=%d\n", ciphertext[i]);
-			printf("input=%d\n", input[i]);
+			//printf("ciphertext[i]=%d\n", ciphertext[i]);
+			//printf("input[i]=%d\n", input[i]);
+			//printf("original input=%s\n", originalInput);
+			//fflush(NULL);
 			return i;
 		}
+		printf("Got one\n");
+		//printf("i=%d\n", i);
+		//printf("ciphertext[i]=%d\n", ciphertext[i]);
+		//printf("input[i]=%d\n", input[i]);
+		//printf("original input=%s\n", originalInput);
+		fflush(NULL);
+
 	}
 	printf("SUCCESS!\n");
+	printf("original input=%s\n", originalInput);
+	fflush(NULL);
 	return 0;
 }
 
