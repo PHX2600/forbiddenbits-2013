@@ -76,5 +76,11 @@ pHYs - Length
 pHYs - Chunk Type
 70 48 59 73 --> pHYs
 
-pHYs - Chunk Data
-00 00 0E C3 00 00 0E C3 01
+pHYs - Chunk Data - Pixels per Unit - X
+00 00 0E C3 --> 3779 pixels per meter
+
+pHYs - Chunk Data - Pixels per Unit - Y
+00 00 0E C3 --> 3779 pixels per meter
+
+pHYs - Chunk Data - Unit Specifier
+01 - Unit is the Meter
