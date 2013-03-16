@@ -1,0 +1,53 @@
+body{
+	background: url(wallpaper.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.first_container{
+	
+	background-color:white;
+	margin-left:22%;
+	width:775px;
+	height:400px;
+	font-size:0px;
+	opacity:0.6;
+}
+.second_container{
+	background-color:#7F7F7F;
+	margin-left:13%;
+	width:1000px;
+	height:100%;
+	color:black;
+	/*opacity:0.6;*/
+}
+.third_container{
+	background-color:white;
+	margin-left:22%;
+	width:775px;
+	height:400px;
+	opacity:0.6;
+}
+
+input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border:1px solid #ccc;
+  font-size:20px;
+  width:300px;
+  min-height:30px;
+  display:block;
+  margin-bottom:15px;
+  margin-top:5px;
+  outline: none;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -o-border-radius:5px;
+  -ms-border-radius:5px;
+  border-radius:5px;
+}
+
+input[type=submit] {
+  background:none;
+  padding:10px;
+}
